@@ -153,6 +153,10 @@ body {
   margin-top: -6.8rem;
 }
 
+.card__image-desktop {
+  display: none;
+}
+
 .card__content {
   margin: 2.75rem 1.5rem 3rem 1.5rem;
 }
@@ -185,5 +189,54 @@ h1 {
   color: var(--color-text-neutral-dark-blue);
   margin-top: 0.75rem;
   padding-bottom: 1.0625rem;
+}
+/*#endregion*/
+
+/*#region Card Desktop fallback styles*/
+@media screen and (min-width: 992px) {
+  body {
+    align-content: center;
+    display: grid;
+    justify-content: center;
+  }
+
+  .card {
+    background-image: url(../images/bg-pattern-desktop.svg);
+    background-position: left -35.5rem top -18.5rem;
+    background-size: 104%;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    max-width: 57.5rem;
+  }
+
+  .card__image-mobile {
+    display: none;
+  }
+
+  .card__image-desktop {
+    background-image: url(../images/illustration-woman-online-desktop.svg);
+    background-position: left -5.25rem center;
+    background-repeat: no-repeat;
+    display: inherit;
+    height: 22.4375rem;
+    margin-top: 4.34rem;
+    min-width: 100%;
+  }
+
+  .card__image-desktop-box {
+    margin-bottom: 2.725rem;
+    margin-left: -5.5rem;
+    margin-top: auto;
+  }
+
+  .card__content {
+    margin-right: 5.9375rem;
+    margin-top: 4.0625rem;
+  }
+
+  h1 {
+    text-align: left;
+  }
 }
 /*#endregion*/

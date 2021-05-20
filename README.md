@@ -48,6 +48,11 @@ Original Mobile Design | My Mobile Design
 
 ## My process
 
+- Start with styling the page for those cases where there is no JavaScript.
+  - Build the mobile view first.
+  - Build the desktop view second.
+- Add JavaScript to enable the accordion functionality.
+
 ### Built with
 
 - Semantic HTML5 markup
@@ -80,4 +85,4 @@ Original Mobile Design | My Mobile Design
 
 ## Acknowledgments
 
-[@LadyMarian](https://www.frontendmentor.io/profile/LadyMarian) - Her markup for the mobile image provided the inspiration for my implementation.
+[@LadyMarian](https://www.frontendmentor.io/profile/LadyMarian) - Her markup for the images provided the inspiration for my implementation.
