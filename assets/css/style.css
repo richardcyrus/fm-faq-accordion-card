@@ -8,8 +8,10 @@
   --color-text-neutral-very-dark-blue: hsl(237, 12%, 33%);
   --color-text-primary-dark-blue: hsl(238, 29%, 16%);
   --color-text-primary-soft-red: hsl(14, 88%, 65%);
-  --font-family: 'Kumbh Sans', sans-serif;
+  --font-family: "Kumbh Sans", sans-serif;
   --font-size: 0.75rem;
+  --font-size-h1: 2rem;
+  --font-size-h2: 0.8125rem;
   --font-weight-normal: 400;
   --font-weight-bold: 700;
 }
@@ -99,30 +101,89 @@ select {
 
 /*#region Attribution*/
 .attribution {
-  font-size: 11px;
+  color: var(--color-text-primary-dark-blue);
+  font-size: 0.6875rem;
+  margin-bottom: 0.5rem;
+  padding-bottom: 1rem;
   text-align: center;
 }
+
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--color-text-primary-soft-red);
+  text-decoration: none;
 }
 /*#endregion*/
 
 /*#region Base styles*/
 body {
+  background-image: linear-gradient(
+    0deg,
+    var(--color-primary-gradient-soft-blue),
+    var(--color-primary-gradient-soft-violet)
+  );
   font-family: var(--font-family);
   font-size: var(--font-size);
   font-weight: var(--font-weight-normal);
+  min-height: 100vh;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  padding-top: 7.5rem;
+}
+
+.card {
+  background-color: white;
+  background-image: url(../images/bg-pattern-mobile.svg);
+  background-position: top;
+  background-repeat: no-repeat;
+  border-radius: 1.4375rem;
+  box-shadow: 0 3.125rem 3.125rem -1.25rem rgba(53, 18, 122, 0.5);
+  margin: 2.5rem 1.5rem 5.3125rem 1.5rem;
+}
+
+.card__image {
+  display: flex;
+  justify-content: center;
+}
+
+.card__image-mobile {
+  margin-left: -30px;
+  margin-top: -6.8rem;
+}
+
+.card__content {
+  margin: 2.75rem 1.5rem 3rem 1.5rem;
 }
 
 h1 {
+  color: var(--color-text-primary-dark-blue);
+  font-size: var(--font-size-h1);
   font-weight: var(--font-weight-bold);
+  text-align: center;
+}
+
+.accordion {
+  margin-top: 2rem;
 }
 /*#endregion*/
 
+/*#region Accordion fallback styles*/
+.accordion__item {
+  border-bottom: 1px solid var(--color-neutral-divider);
+}
 
-/*#region Accordion styles*/
-.accordion-item h2 {
-  font-size: var(--font-size);
-  font-weight: var(--font-weight-normal);
+.accordion__item h2 {
+  color: var(--color-text-primary-dark-blue);
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-bold);
+  margin-top: 1.0625rem;
+}
+
+.accordion__item > div > p {
+  color: var(--color-text-neutral-dark-blue);
+  margin-top: 0.75rem;
+  padding-bottom: 1.0625rem;
 }
 /*#endregion*/

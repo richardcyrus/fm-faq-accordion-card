@@ -58,7 +58,8 @@ Original Mobile Design | My Mobile Design
 
 ### What I learned
 
-- Accessible markup for an accordion component
+- Accessible markup for an accordion component.
+- Positioning the mobile image was a a bit of a challenge. The supplied asset has an extra 30 pixel on the left which made it hard to match the design. To fix the problem, I wrapped the image in a flex container set to `justify-content: center;` and added `margin-left: -30px;` to the image.
 
 ### Useful resources
 
@@ -78,3 +79,5 @@ Original Mobile Design | My Mobile Design
 - Twitter - [@techmanrc](https://www.twitter.com/techmanrc)
 
 ## Acknowledgments
+
+[@LadyMarian](https://www.frontendmentor.io/profile/LadyMarian) - Her markup for the mobile image provided the inspiration for my implementation.
