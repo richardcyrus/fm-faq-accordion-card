@@ -189,6 +189,7 @@
       buttonIcon.setAttribute("aria-hidden", "true");
       buttonIcon.setAttribute("focusable", "false");
       buttonIcon.setAttribute("alt", "");
+      buttonIcon.classList.add("icon-arrow");
 
       /**
        * Check the corresponding panel to see if it was setup to be hidden
@@ -235,7 +236,15 @@
   Accordion.togglePanel = function (e, thisAccordion, targetPanel, triggers) {
     let getId;
     let i;
-    const thisTrigger = e.target;
+    let thisTrigger = e.target;
+
+    /**
+     * If the user clicks on the icon, set the click target to the button
+     * so that we get the desired behaviors.
+     */
+    if (thisTrigger.matches(".icon-arrow")) {
+      thisTrigger = thisTrigger.parentElement;
+    }
 
     if (thisTrigger.getAttribute("aria-disabled") !== "true") {
       getId = thisTrigger.getAttribute("aria-controls");

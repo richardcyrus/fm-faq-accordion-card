@@ -260,19 +260,17 @@ h2.accordion__heading,
 
 .accordion__trigger {
   all: inherit;
+  align-items: center;
   cursor: pointer;
-  display: block;
+  display: flex;
+  justify-content: space-between;
   min-width: 100%;
   position: relative;
   z-index: 2;
 }
 
-.accordion__trigger > img {
-  bottom: 0;
-  margin: auto;
-  position: absolute;
-  right: 1rem;
-  top: 0;
+.accordion__trigger > .icon-arrow {
+  margin-right: 1rem;
   transform-origin: center center;
   transform: rotate(0deg);
   transition: transform 0.2s ease-in-out;
@@ -284,7 +282,7 @@ h2.accordion__heading,
   outline: none;
 }
 
-.accordion__trigger[aria-expanded="true"] > img {
+.accordion__trigger[aria-expanded="true"] > .icon-arrow {
   transform-origin: center center;
   transform: rotate(180deg);
   transition: transform 0.2s ease-in-out;
