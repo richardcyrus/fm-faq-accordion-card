@@ -31,7 +31,7 @@ Users should be able to:
 
 Original Mobile Design | My Mobile Design
 :--:|:--:
-![Original mobile design for the FAQ accordion card coding challenge](./design/reference/mobile-design.jpg) | ![My mobile design](./design/screenshots/mobile-screenshot.png)
+![Original mobile design for the FAQ accordion card coding challenge](./design/reference/mobile-design.jpg) | ![My mobile design](./design/screenshots/mobile-screenshot.jpg)
 
 #### Original desktop design
 
@@ -43,8 +43,8 @@ Original Mobile Design | My Mobile Design
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/richardcyrus/fm-faq-accordion-card.git](https://github.com/richardcyrus/fm-faq-accordion-card.git)
+- Live Site URL: [https://www.richardcyrus.com/fm-faq-accordion-card/](https://www.richardcyrus.com/fm-faq-accordion-card/)
 
 ## My process
 
