@@ -171,9 +171,7 @@ h1 {
 .accordion {
   margin-top: 2rem;
 }
-/*#endregion*/
 
-/*#region Accordion fallback styles*/
 .accordion__item {
   border-bottom: 1px solid var(--color-neutral-divider);
 }
@@ -192,7 +190,7 @@ h1 {
 }
 /*#endregion*/
 
-/*#region Card Desktop fallback styles*/
+/*#region Card desktop fallback styles*/
 @media screen and (min-width: 992px) {
   body {
     align-content: center;
@@ -238,5 +236,81 @@ h1 {
   h1 {
     text-align: left;
   }
+}
+/*#endregion*/
+
+/*#region Accordion Styles*/
+h2.accordion__heading,
+.accordion__trigger[aria-expanded="false"] {
+  color: var(--color-text-primary-dark-blue);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight-normal);
+}
+
+.accordion__trigger[aria-expanded="false"] {
+  margin-bottom: 1.0625rem;
+}
+
+.accordion__trigger[aria-expanded="true"] {
+  color: var(--color-text-primary-dark-blue);
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: 0;
+}
+
+.accordion__trigger {
+  all: inherit;
+  cursor: pointer;
+  display: block;
+  min-width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.accordion__trigger > img {
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  right: 1rem;
+  top: 0;
+  transform-origin: center center;
+  transform: rotate(0deg);
+  transition: transform 0.2s ease-in-out;
+}
+
+/* .accordion__trigger:focus, */
+.accordion__trigger:hover {
+  color: var(--color-text-primary-soft-red);
+  outline: none;
+}
+
+.accordion__trigger[aria-expanded="true"] > img {
+  transform-origin: center center;
+  transform: rotate(180deg);
+  transition: transform 0.2s ease-in-out;
+}
+
+.accordion__trigger[aria-disabled="true"]:hover {
+  cursor: not-allowed;
+}
+
+.accordion__panel {
+  background-color: inherit;
+  max-height: 0vh;
+  overflow: hidden;
+  position: relative;
+  visibility: hidden;
+  z-index: 1;
+}
+
+.accordion__panel--transition {
+  transition: max-height 0.2s ease-in-out, padding-top 0.2s ease-in-out,
+    padding-bottom 0.2s ease-in-out;
+}
+
+.accordion__panel[aria-hidden="false"] {
+  max-height: 100vh;
+  overflow: auto;
+  visibility: visible;
 }
 /*#endregion*/

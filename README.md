@@ -52,6 +52,7 @@ Original Mobile Design | My Mobile Design
   - Build the mobile view first.
   - Build the desktop view second.
 - Add JavaScript to enable the accordion functionality.
+- Test and style the Accordion.
 
 ### Built with
 
@@ -60,11 +61,13 @@ Original Mobile Design | My Mobile Design
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
+- CSS transitions
 
 ### What I learned
 
 - Accessible markup for an accordion component.
 - Positioning the mobile image was a a bit of a challenge. The supplied asset has an extra 30 pixel on the left which made it hard to match the design. To fix the problem, I wrapped the image in a flex container set to `justify-content: center;` and added `margin-left: -30px;` to the image.
+- The JavaScript used to enable the accordion functionality is based on the script from Scott O'Hara, with the original located [here](https://github.com/scottaohara/a11y_accordions).
 
 ### Useful resources
 
