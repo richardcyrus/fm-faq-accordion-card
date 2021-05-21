@@ -276,7 +276,12 @@ h2.accordion__heading,
   transition: transform 0.2s ease-in-out;
 }
 
-/* .accordion__trigger:focus, */
+.accordion__trigger:focus {
+  color: var(--color-text-primary-dark-blue);
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-bold);
+}
+
 .accordion__trigger:hover {
   color: var(--color-text-primary-soft-red);
   outline: none;
