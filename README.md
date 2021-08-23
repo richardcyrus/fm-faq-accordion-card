@@ -43,8 +43,9 @@ Original Mobile Design | My Mobile Design
 
 ### Links
 
-- Solution URL: [https://github.com/richardcyrus/fm-faq-accordion-card.git](https://github.com/richardcyrus/fm-faq-accordion-card.git)
-- Live Site URL: [https://www.richardcyrus.com/fm-faq-accordion-card/](https://www.richardcyrus.com/fm-faq-accordion-card/)
+- [Solution URL](https://www.frontendmentor.io/solutions/faq-accordion-card-javascript-accordion-ZU3KJ7fTD)
+- [Repository URL](https://github.com/richardcyrus/fm-faq-accordion-card.git)
+- [Live Site URL](https://www.richardcyrus.com/fm-faq-accordion-card/)
 
 ## My process
 
@@ -84,7 +85,6 @@ Original Mobile Design | My Mobile Design
 
 - Website - [Richard Cyrus](https://www.richardcyrus.com)
 - Frontend Mentor - [@richardcyrus](https://www.frontendmentor.io/profile/richardcyrus)
-- Twitter - [@techmanrc](https://www.twitter.com/techmanrc)
 
 ## Acknowledgments
 
